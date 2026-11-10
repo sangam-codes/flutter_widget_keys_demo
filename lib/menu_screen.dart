@@ -6,6 +6,7 @@ import 'screens/object_key_demo_screen.dart';
 import 'screens/unique_key_demo_screen.dart';
 import 'screens/value_key_demo_screen.dart';
 
+/// Home screen. Each tile opens one key demo.
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
 
@@ -20,6 +21,7 @@ class MenuScreen extends StatelessWidget {
     );
   }
 
+  /// Tinted bar so this screen is distinct from the plain demo app bars.
   PreferredSizeWidget _buildAppBar(BuildContext context) {
     return AppBar(
       title: const Text('Flutter Keys Demo'),
@@ -27,6 +29,7 @@ class MenuScreen extends StatelessWidget {
     );
   }
 
+  /// One line that states the pattern used by every demo.
   Widget _buildIntro() {
     return const Padding(
       padding: EdgeInsets.symmetric(vertical: 8),
@@ -37,6 +40,7 @@ class MenuScreen extends StatelessWidget {
     );
   }
 
+  /// Four demos, in the same order as the README.
   List<Widget> _buildDemoTiles(BuildContext context) {
     return [
       DemoTile(
@@ -66,6 +70,7 @@ class MenuScreen extends StatelessWidget {
     ];
   }
 
+  /// Pushes a demo onto the stack. Back returns to this menu.
   void _push(BuildContext context, Widget screen) {
     Navigator.push(context, MaterialPageRoute(builder: (context) => screen));
   }
