@@ -1,6 +1,6 @@
 # flutter_widget_keys_demo
 
-A Flutter demo of widget keys. Each screen shows the same widget twice: once without a key, and once with a key, so you can see which `State` Flutter keeps.
+A Flutter demo of widget keys. Each screen shows the same widget twice: once without a key, and once with a key, so you can see which `State` Flutter keeps
 
 Open the app and pick a key from the menu.
 
