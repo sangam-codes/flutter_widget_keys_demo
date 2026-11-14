@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'menu_screen.dart';
 
+/// Starts the app at [MyApp].
 void main() {
   runApp(const MyApp());
 }
 
+/// Root widget. Sets the theme and opens [MenuScreen].
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -18,6 +20,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
+  /// Deep purple seed. Flutter fills the rest of the color scheme from it.
   static ThemeData _buildTheme() {
     return ThemeData(
       colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
